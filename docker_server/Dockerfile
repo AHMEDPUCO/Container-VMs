@@ -8,7 +8,7 @@ COPY nginx.conf /etc/nginx/nginx.conf
 COPY index.html /usr/share/nginx/html/index.html
 
 #Exponemos el puerto 8080 al mundo exterior
-EXPOSE 8080
+EXPOSE 8888
 
 # Inicializar NGINX cuando el contenedor se inicie.
 CMD ["nginx", "-g", "daemon off;"]
